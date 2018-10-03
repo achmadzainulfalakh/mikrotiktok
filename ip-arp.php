@@ -1,5 +1,8 @@
 <?php session_start();
-	include "include/header.php"; ?>
+	include "include/driver-api.php";
+	include "include/header.php"; 
+	
+	?>
 <main class="app-content">
 	<div class="app-title">
 		<div>
@@ -25,14 +28,7 @@
 							</tr>
 						</thead>	
 						<?php 
-							$host=$_SESSION["host"];
-							$username=$_SESSION["username"];
-							$password=$_SESSION["password"];
-							use PEAR2\Net\RouterOS;
-							require_once 'Net_RouterOS/PEAR2_Net_RouterOS-1.0.0b6.phar';
-							$util = new RouterOS\Util(
-							$client = new RouterOS\Client($host, $username, $password)
-							);
+							
 							$util->setMenu('/ip arp');
 							
 							foreach ($util->getAll() as $item) {							
