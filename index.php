@@ -1,11 +1,13 @@
 <?php 
 	session_start();
+	
 	if($_GET){
-	$_SESSION["host"]=$_GET['h'];
-	$_SESSION["username"]=$_GET['u'];
-	$_SESSION["password"]=$_GET['p'];
+		$_SESSION["host"]=$_GET['h'];
+		$_SESSION["username"]=$_GET['u'];
+		$_SESSION["password"]=$_GET['p'];
 	}
 	
+	include "include/driver-api.php";
 	
 include "include/header.php"; ?>
 
@@ -30,7 +32,7 @@ include "include/header.php"; ?>
 						print "host: ".$_SESSION["host"]."<br/>";
 						print "username: ".$_SESSION["username"]."<br/>";
 						print "password: ".$_SESSION["password"]."<br/>";
-						?>
+					?>
 					
 					
 					

@@ -106,6 +106,8 @@
 			</div>
 			<ul class="app-menu">
 				<li><a class="app-menu__item" href="index.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+				<li><a class="app-menu__item" href="interfaces.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Interfaces</span></a></li>
+				<li><a class="app-menu__item" href="bridge.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Bridge</span></a></li>
 				<li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">IP</span><i class="treeview-indicator fa fa-angle-right"></i></a>
 					<ul class="treeview-menu">
 						<li><a class="treeview-item" href="ip-arp.php"><i class="icon fa fa-circle-o"></i> Arp</a></li>
