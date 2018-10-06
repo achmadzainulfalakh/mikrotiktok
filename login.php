@@ -1,3 +1,20 @@
+<?php 
+	session_start();
+	
+	if($_GET){
+		$_SESSION["host"]=$_GET['h'];
+		$_SESSION["username"]=$_GET['u'];
+		$_SESSION["password"]=$_GET['p'];
+		header("Location: index.php");
+	} 
+	if($_SESSION["host"]){
+	header("Location: index.php");
+	if($_GET["c"] == "logout"){
+	session_unset();
+	session_destroy();
+	}
+}
+	?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,7 +36,7 @@
         <h1>Mikrotiktok</h1>
       </div>
       <div class="login-box">
-        <form class="login-form" action="index.php">
+        <form class="login-form" action="">
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
           <div class="form-group">
             

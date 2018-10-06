@@ -90,7 +90,7 @@
 				<ul class="dropdown-menu settings-menu dropdown-menu-right">
 					<li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
 					<li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-					<li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+					<li><a class="dropdown-item" href="login.php?c=logout"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
 				</ul>
 			</li>
 			</ul>
@@ -114,6 +114,7 @@
 						<li><a class="treeview-item" href="ip-address.php"><i class="icon fa fa-circle-o"></i> Address</a></li>
 						<li><a class="treeview-item" href="ip-dhcp-server.php"><i class="icon fa fa-circle-o"></i> DHCP Server</a></li>
 						<li><a class="treeview-item" href="ip-dhcp-client.php"><i class="icon fa fa-circle-o"></i> DHCP Client</a></li>
+						<li><a class="treeview-item" href="ip-hotspot.php"><i class="icon fa fa-circle-o"></i> Hotspot</a></li>
 					</ul>
 				</li>
 				<li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>

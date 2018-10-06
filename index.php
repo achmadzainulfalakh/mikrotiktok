@@ -1,12 +1,8 @@
 <?php 
 	session_start();
-	
-	if($_GET){
-		$_SESSION["host"]=$_GET['h'];
-		$_SESSION["username"]=$_GET['u'];
-		$_SESSION["password"]=$_GET['p'];
-	}
-	
+if(!$_SESSION["host"]){
+	header("Location: login.php");
+}
 	include "include/driver-api.php";
 	
 include "include/header.php"; ?>
